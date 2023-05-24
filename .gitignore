@@ -1,0 +1,10 @@
+node_modules
+dist
+data
+
+# unnecessary files
+old_code.ts
+x.ts
+example_html.ts
+try.ts
+temp.ts

@@ -1,0 +1,627 @@
+:root {
+  --sf-img-0: url(data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADICAIAAACmkByiAAAAWElEQVR4AaWSwQ3AIAwDbfbfpdt0nKrPUp3QCfHgkfjsCMh47mskmU5HGvbmuuh9dVce8M4it/SfMZglGeZx/ccyu/Vsv4/N29f331AY5Bi3+hdo4A92+wXvCwR9mXztrAAAAABJRU5ErkJggg==)
+}
+
+html {
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+body {
+  background: #ffe var(--sf-img-0) top center repeat-x;
+  color: maroon;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 10pt;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.adl {
+  font-size: 10px;
+  text-align: center
+}
+
+input:-moz-placeholder {
+  color: gray !important
+}
+
+a,
+a:visited {
+  color: #00e;
+  text-decoration: none
+}
+
+a:hover {
+  color: red !important
+}
+
+div.board>hr {
+  clear: both
+}
+
+img {
+  border: none
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d9bfb7;
+  height: 0
+}
+
+hr.abovePostForm {
+  width: 90%
+}
+
+div.boardBanner {
+  text-align: center;
+  clear: both
+}
+
+#bannerCnt {
+  border: 1px solid #800;
+  margin: 5px auto;
+  width: 300px;
+  height: 100px;
+  max-width: 100%
+}
+
+div.boardTitle {
+  font-family: Tahoma, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-top: 0
+}
+
+div.boardBanner>div.boardSubtitle {
+  font-size: x-small
+}
+
+div.opContainer {
+  display: inline
+}
+
+div.sideArrows {
+  color: #e0bfb7;
+  float: left;
+  margin-right: 2px;
+  margin-top: 0;
+  margin-left: 2px
+}
+
+div.thread {
+  margin: 0;
+  clear: both
+}
+
+div.post {
+  margin: 4px 0;
+  overflow: hidden
+}
+
+div.thread>div:nth-of-type(2)>div.reply {
+  margin-top: 2px !important
+}
+
+div.op {
+  display: inline
+}
+
+div.reply {
+  background-color: #f0e0d6;
+  border: 1px solid #d9bfb7;
+  border-left: none;
+  border-top: none;
+  display: table;
+  padding: 2px
+}
+
+div.reply input {
+  float: none
+}
+
+div.post div.postInfo {
+  display: block;
+  width: 100%
+}
+
+.fileText {
+  max-width: 600px;
+  white-space: nowrap
+}
+
+div.post div.postInfo span.postNum a {
+  text-decoration: none;
+  color: maroon
+}
+
+div.post div.postInfo span.postNum a:hover,
+.posteruid .hand:hover {
+  color: red !important
+}
+
+div.post div.postInfo span.nameBlock {
+  display: inline-block
+}
+
+div.post div.postInfo span.nameBlock span.name {
+  color: #117743;
+  font-weight: 700
+}
+
+div.post div.postInfo span.subject {
+  color: #cc1105;
+  font-weight: 700
+}
+
+div.post blockquote.postMessage {
+  display: block
+}
+
+blockquote>span.quote {
+  color: #789922
+}
+
+.quotelink {
+  color: navy !important;
+  text-decoration: underline
+}
+
+div.post div.file {
+  display: block
+}
+
+div.post div.file .fileThumb {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 3px;
+  margin-bottom: 5px
+}
+
+div.post div.file .fileThumb img {
+  border: none;
+  float: left
+}
+
+div.thread:last-child {
+  padding-bottom: 21px;
+  margin-bottom: 6px
+}
+
+.bottomCtrl {
+  float: right;
+  margin-top: 2px
+}
+
+.stylechanger {
+  margin-left: 5px;
+  font-size: 10pt
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input:not([type]):focus,
+textarea:focus {
+  border: 1px solid #ea8 !important
+}
+
+.reply:target,
+.reply.highlight {
+  background: #f0c0b0 !important;
+  border: 1px solid #d99f91 !important;
+  border-left: none !important;
+  border-top: none !important;
+  padding: 2px
+}
+
+div.backlink {
+  font-size: x-small !important;
+  padding-bottom: 5px;
+  padding-right: 10px
+}
+
+.backlink span {
+  padding-right: 5px
+}
+
+.fileText a {
+  text-decoration: underline
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0
+  }
+}
+
+@-moz-keyframes blink {
+  50% {
+    opacity: 0
+  }
+}
+
+@-o-keyframes blink {
+  50% {
+    opacity: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0
+  }
+}
+
+@media only screen and (max-width:480px) {
+  html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+  }
+
+  .postMenuBtn {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 4px -5px 0 4px !important;
+    float: left;
+    font-weight: 700;
+    opacity: 1 !important;
+    height: .5em !important;
+    font-size: 16px
+  }
+
+  body {
+    background: #ffe var(--sf-img-0) top center repeat-x;
+    color: maroon;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 10pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%
+  }
+
+  img {
+    border: none
+  }
+
+  div.boardBanner {
+    margin-top: 40px !important
+  }
+
+  .desktop {
+    display: none !important
+  }
+
+  div.board>hr {
+    border: none;
+    border-top: 1px solid #d9bfb7;
+    height: 0;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important
+  }
+
+  div.board>hr:last-of-type {
+    margin-bottom: 10px !important
+  }
+
+  hr.abovePostForm {
+    width: 90%
+  }
+
+  div.post div.file .fileThumb img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: scale-down
+  }
+
+  div.post div.file .fileThumb {
+    margin-left: 5px !important;
+    margin-right: 10px !important;
+    text-decoration: none
+  }
+
+  div.post div.file div.fileText {
+    display: none
+  }
+
+  div.sideArrows {
+    display: none
+  }
+
+  div.reply {
+    margin: 0
+  }
+
+  div.replyContainer {
+    background-color: #f0e0d6;
+    margin: 5px 5px 0;
+    padding-left: 0
+  }
+
+  div.opContainer {
+    padding: 5px;
+    display: block;
+    overflow: hidden;
+    background-color: #f5e9e1;
+    border: 1px solid #d9bfb7
+  }
+
+  blockquote {
+    margin: 10px !important
+  }
+
+  blockquote.postMessage {
+    font-size: 11pt
+  }
+
+  div.thread {
+    border-top: none
+  }
+
+  div.opContainer div.postInfo {
+    display: none !important
+  }
+
+  div.postInfo span.postNum {
+    float: left
+  }
+
+  div.postInfo span.postNum a {
+    color: maroon !important
+  }
+
+  div.postInfo span.nameBlock {
+    display: inline;
+    float: left;
+    clear: left
+  }
+
+  div.postInfo span.nameBlock span.name {
+    color: #117743;
+    font-weight: 700
+  }
+
+  div.replyContainer div.reply {
+    width: 100%;
+    padding: 0 !important
+  }
+
+  div.replyContainer div.post div.postInfo {
+    overflow: hidden;
+    border-bottom: 1px solid #d9bfb7;
+    background-color: #ead6ca;
+    padding: 3px;
+    margin: 0
+  }
+
+  div.replyContainer div.post div.postInfo input[type=checkbox] {
+    display: none
+  }
+
+  div.replyContainer div.post div.postInfo span.postNum {
+    font-style: italic
+  }
+
+  div.replyContainer div.post div.postInfo span.postNum a:first-child:after {
+    content: " "
+  }
+
+  div.replyContainer div.post div.postInfo span.dateTime {
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic
+  }
+
+  div.thread>div:nth-of-type(2)>div.reply {
+    margin-top: 0 !important
+  }
+
+  div.replyContainer div.post div.file {
+    padding: 5px
+  }
+
+  div.navLinks {
+    margin-top: 9px !important;
+    margin-bottom: 0 !important;
+    text-align: center
+  }
+
+  div.post div.postInfo span.postNum a {
+    text-decoration: none;
+    color: maroon !important
+  }
+
+  div.boardBanner {
+    text-align: center;
+    clear: both
+  }
+
+  div.boardTitle {
+    font-family: Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-top: 0
+  }
+
+  div.boardBanner>div.boardSubtitle {
+    font-size: x-small
+  }
+
+  div.post div.file .fileThumb img {
+    border: none;
+    float: left
+  }
+
+  span.subject {
+    display: block
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #d9bfb7;
+    height: 0
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 1px solid #ea8 !important
+  }
+
+  a {
+    color: #00e !important
+  }
+
+  a:hover,
+  .useremail .name:hover,
+  .useremail .postertrip:hover,
+  a.quoteLink:hover,
+  a.quotelink:hover,
+  a.deadlink:hover,
+  .useremail *:hover,
+  .useremail:hover *,
+  .posteruid .hand:hover {
+    color: red !important
+  }
+
+  .quotelink {
+    color: navy !important
+  }
+
+  div.reply {
+    background-color: #f0e0d6;
+    border: 1px solid #d9bfb7 !important
+  }
+
+  .reply:target,
+  .reply:focus,
+  .reply.highlight {
+    background: #f0c0b0 !important;
+    border: 1px solid #d9bfb7 !important
+  }
+}
+
+
+/******************************* Styles 2 *******************************/
+
+body.hasDropDownNav {
+  margin-top: 45px
+}
+
+div.backlink {
+  font-size: 0.8em !important;
+  display: inline;
+  padding: 0;
+  padding-left: 5px
+}
+
+.backlink span {
+  padding: 0
+}
+
+.thread-stats {
+  float: right;
+  margin-right: 5px;
+  cursor: default
+}
+
+.compact .thread {
+  max-width: 75%
+}
+
+.open-qr-wrap {
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  margin-left: 50%;
+  left: -100px
+}
+
+.postMenuBtn {
+  margin-left: 5px;
+  text-decoration: none;
+  line-height: 1em;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.1s;
+  -moz-transition: -moz-transform 0.1s;
+  transition: transform 0.1s;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  outline: none;
+  opacity: 0.8
+}
+
+.postMenuBtn:hover {
+  opacity: 1
+}
+
+.yotsuba_new .postMenuBtn {
+  color: #000080
+}
+
+@media only screen and (max-width:480px) {
+  .thread-stats {
+    float: none;
+    text-align: center
+  }
+
+  .ts-replies:before {
+    content: "Replies: "
+  }
+
+  .ts-images:before {
+    content: "Images: "
+  }
+
+  .ts-ips:before {
+    content: "Posters: "
+  }
+
+  .ts-page:before {
+    content: "Page: "
+  }
+}
+
+
+/******************************* Styles 3 *******************************/
+#postForm {
+  display: table !important;
+}
+
+#g-recaptcha {
+  display: none;
+}
+
+.sf-hidden {
+  display: none !important
+}
+
+
+img[src="data:,"],
+source[src="data:,"] {
+  display: none !important
+}
+
+#quote-preview {
+  display: block;
+  position: absolute;
+  padding: 3px 6px 6px 3px;
+  margin: 0;
+}
+
+
+.linkfade {
+  opacity: 0.5;
+}

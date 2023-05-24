@@ -1,0 +1,37 @@
+{
+  "name": "scrape-4-chan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "clean": "if exist dist rmdir /s /q dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.0",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.9",
+    "@types/pug": "^2.0.6",
+    "@types/request": "^2.48.8",
+    "@types/superagent": "^4.1.16",
+    "@types/yargs": "^17.0.17",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "cli-progress": "^3.12.0",
+    "express": "^4.18.2",
+    "pug": "^3.0.2",
+    "superagent": "^8.0.5",
+    "yargs": "^17.6.2"
+  }
+}
