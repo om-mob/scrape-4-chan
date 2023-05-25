@@ -31,7 +31,7 @@ const create_files_and_folders: CreateFilesAndFolders = (board, thread_title, th
   // const downloaded_file = path.join(thread_dir, "downloaded.txt")
 
   /***** create dirs *****/
-  if (!fs.existsSync(data_dir)) fs.mkdirSync(data_dir);
+  if (!fs.existsSync(data_dir)) fs.mkdirSync(data_dir); // this code also exists in `write_logs.ts` file, cause archive file depends on data folder
   if (!fs.existsSync(board_dir)) fs.mkdirSync(board_dir);
   if (!fs.existsSync(thread_dir)) fs.mkdirSync(thread_dir);
   if (!fs.existsSync(thumbnail_dir)) fs.mkdirSync(thumbnail_dir);

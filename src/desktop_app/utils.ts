@@ -7,7 +7,7 @@ export function validate_url(url: string, err: string[]) {
 
     const japanese_culture = ["a", "c", "w", "m", ]
     const video_games = ["v"]
-    const interests = ["co"]
+    const interests = ["co", "g"]
     const creative = ["i", "wsg", "ic"]
     const other = ["biz"]
     const misc = ["pol"]

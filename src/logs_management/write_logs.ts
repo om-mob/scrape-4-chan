@@ -16,10 +16,11 @@ import { get_log_header } from "./utils";
 
 // import configs
 import { LEN_BOARD, LEN_DATE, LEN_HOST, LEN_IMAGE_COUNT, LEN_REPLY_COUNT, LEN_SIZE, LEN_THREAD_ID, LEN_TITLE } from "./consts";
-import { ARCHIVE_PATH } from "../config/consts";
+import { ARCHIVE_PATH, DATA_PATH } from "../config/consts";
 
 const write_thread_log: WriteThreadLog = (thread_url, thread_title, replies_count, image_count, total_size) => {
   const filePath = ARCHIVE_PATH;
+  if (!fs.existsSync(DATA_PATH)) fs.mkdirSync(DATA_PATH); // this line should be in `create_files_folders.ts` file, but since Archive file depends on it, it's included here as well
   if (!fs.existsSync(filePath)) fs.writeFileSync(filePath, get_log_header());
 
   const archive = fs.readFileSync(filePath, "utf8");
