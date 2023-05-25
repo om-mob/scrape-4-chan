@@ -20,6 +20,7 @@ import { DATA_PATH } from "../config/consts";
 const create_files_and_folders: CreateFilesAndFolders = (board, thread_title, thread_id) => {
   /***** prepare dir names *****/
   const data_dir = DATA_PATH;
+  const archive_path = path.join(DATA_PATH, "archive.txt")
   const board_dir = path.join(data_dir, board);
   const thread_dir = path.join(
     board_dir,
@@ -35,6 +36,7 @@ const create_files_and_folders: CreateFilesAndFolders = (board, thread_title, th
   if (!fs.existsSync(board_dir)) fs.mkdirSync(board_dir);
   if (!fs.existsSync(thread_dir)) fs.mkdirSync(thread_dir);
   if (!fs.existsSync(thumbnail_dir)) fs.mkdirSync(thumbnail_dir);
+  if (!fs.existsSync(archive_path)) fs.writeFileSync(archive_path, ``)
   // fs.appendFileSync(downloaded_file, ``)
 
   return [board_dir, data_dir, thread_dir, data_file_name, thumbnail_dir, replies_path];
