@@ -143,7 +143,8 @@ function handle_u(argv: TArgv) {
 }
 
 function handle_regular(argv: TArgv) {
-  const return_vals = argv._.map((url) => {
+  const threads = Array.from(new Set(argv._)) // To remove duplicates
+  const return_vals = threads.map((url) => {
     const err: string[] = [];
     const url_mod = construct_valid_url(url as string);
     validate_url(url_mod, err);
