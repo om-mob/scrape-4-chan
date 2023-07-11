@@ -49,6 +49,7 @@ const write_image_data: WriteImageData = async (img_obj, thread_dir, results, id
   if (fs.existsSync(video_path)) {
     waitingQueue.pop();
     progressBar.increment(1)
+    write_image_ref(thread_dir, img_obj)
     // print_logs(idx, "Skip", video_name, ext, "Already Exists")
     return;
   }

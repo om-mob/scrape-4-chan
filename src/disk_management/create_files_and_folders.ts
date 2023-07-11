@@ -24,7 +24,7 @@ const create_files_and_folders: CreateFilesAndFolders = (board, thread_title, th
   const board_dir = path.join(data_dir, board);
   const thread_dir = path.join(
     board_dir,
-    thread_title.trim().replace(/[|@"<>\\\/?:]/g, "_") + " - " + thread_id
+    thread_title.trim().replace(/[|@"<>\\\/?:]/g, "_").substring(0, 100) + " - " + thread_id
   );
   const thumbnail_dir = path.join(thread_dir, "thumbnails");
   const data_file_name = path.join(thread_dir, "meta.json");
